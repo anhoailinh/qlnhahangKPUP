@@ -1,0 +1,160 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* tự thêm ------------------------------------------------------------------------ */
+.btn-them {
+	background: linear-gradient(45deg, #6241d0, #475fff);
+	border: none;
+	color: white;
+	padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+	font-weight: bold;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-them:hover {
+	background: linear-gradient(45deg, #5094b0, #2c559c);
+	transform: scale(1.05);
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+	color: white;
+}
+
+.btn-them:active {
+	transform: scale(0.98);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+   
+
+        /* Khung chứa form */
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }
+
+        /* Định dạng bảng trong form */
+        .form {
+            width: 100%;
+        }
+
+        /* Định dạng input */
+        .form input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        /* Hiệu ứng khi nhập vào input */
+        .form input[type="text"]:focus {
+            border-color: #ff4757;
+            box-shadow: 0 0 8px rgba(255, 71, 87, 0.5);
+            outline: none;
+        }
+
+        /* Định dạng nút submit */
+        .form input[type="submit"] {
+            background: linear-gradient(45deg, #6241d0, #475fff);
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Hiệu ứng hover nút submit */
+        .form input[type="submit"]:hover {
+            background: linear-gradient(45deg, #5094b0, #2c559c);
+            transform: scale(1.05);
+			color: white;
+        }
+
+        /* Hiệu ứng khi bấm nút */
+        .form input[type="submit"]:active {
+            transform: scale(0.98);
+        }
+
+        /* Định dạng nút Quay Lại */
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            background: #ddd;
+            transition: 0.3s;
+        }
+
+        /* Hiệu ứng hover nút Quay Lại */
+        .back-btn:hover {
+            background: #bbb;
+        }
+		.btnsave{
+			padding: 10px 30px;
+		}
