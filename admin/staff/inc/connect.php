@@ -1,8 +1,8 @@
 <?php 
-   $server = 'sql309.infinityfree.com';
-    $user = 'if0_39066208';
+   $server = 'nhahangkpup.mysql.database.azure.com';
+    $user = 'nhahangkpup';
     $pass = 'Linh3011';
-    $database ='if0_39066208_gs_restaurant';
+    $database ='nhahangkpup';
 
     $conn= new mysqli($server,$user,$pass,$database);
     if($conn){
