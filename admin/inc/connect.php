@@ -2,7 +2,7 @@
    $server = 'nhahangkpup.mysql.database.azure.com';
     $user = 'nhahangkpup';
     $pass = 'Linh3011';
-    $database ='nhahangkpup';
+    $database ='gs_restaurant';
 
     $conn= new mysqli($server,$user,$pass,$database);
     if($conn){
