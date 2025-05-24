@@ -1,8 +1,8 @@
 <?php 
-    $server = 'localhost';
-    $user = 'root';
-    $pass = '';
-    $database ='gs_restaurant';
+    $server = 'nhahangkpup.mysql.database.azure.com';
+    $user = 'nhahangkpup';
+    $pass = 'Linh3011';
+    $database ='nhahangkpup';
 
     $conn= new mysqli($server,$user,$pass,$database);
     if($conn){
