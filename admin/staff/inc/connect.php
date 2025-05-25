@@ -1,7 +1,7 @@
 <?php
 $server = 'nhahangkpup.mysql.database.azure.com';
 $port = 3306;
-$user = 'nhahangkpup@nhahangkpup'; // username theo dạng username@hostname trên Azure
+$user = 'nhahangkpup'; // username theo dạng username@hostname trên Azure
 $pass = 'Linh3011';
 $database = 'gs_restaurant';
 
