@@ -22,5 +22,5 @@ if (!$conn->real_connect($server, $user, $pass, $database, $port, NULL, MYSQLI_C
 // Thiết lập charset UTF-8
 mysqli_query($conn, "SET NAMES 'utf8'");
 
-echo "Kết nối thành công!";
+// echo "Kết nối thành công!";
 ?>
