@@ -83,7 +83,7 @@ public function insert($query){
    }
  
 }
-?>
+
 
 
  
