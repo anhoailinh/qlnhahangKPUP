@@ -84,6 +84,6 @@ public function insert($query){
  
 }
 
-
+?>
 
  
