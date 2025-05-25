@@ -21,14 +21,22 @@ Class Database{
   
  }
  
-private function connectDB(){
-   $this->link = new mysqli($this->host, $this->user, $this->pass, 
-    $this->dbname);
-   if(!$this->link){
-     $this->error ="Connection fail".$this->link->connect_error;
-    return false;
-   }
- }
+private function connectDB() {
+    $mysqli = mysqli_init();
+
+    // Thiết lập SSL - không cần chỉ định cert nếu không yêu cầu verify CA
+    $mysqli->ssl_set(NULL, NULL, NULL, NULL, NULL);
+
+    // Kết nối sử dụng SSL
+    if (!$mysqli->real_connect($this->host, $this->user, $this->pass, $this->dbname, DB_PORT, NULL, MYSQLI_CLIENT_SSL)) {
+        $this->error = "Connection failed: " . $mysqli->connect_error;
+        return false;
+    }
+
+    $this->link = $mysqli;
+    return true;
+}
+
  
 // Select or Read data
 public function select($query){
